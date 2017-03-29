@@ -64,8 +64,6 @@ public class MyPanel extends JPanel
 	}
 
 
-
-
 	public void paintComponent(Graphics g) 
 	{
 		super.paintComponent(g);
@@ -131,28 +129,11 @@ public class MyPanel extends JPanel
 		}
 	}
 
-				 }
-			 }
-		 }
+				 
+			 
+		 
 
-		for (int x = 0; x < TOTAL_COLUMNS; x++){
-			for (int y = 0; y < TOTAL_ROWS; y++) {
-				if(GameLost){
-
-					if (countMines[x][y] == 1){
-					if (countMines[x][y] == 2){
-
-					g.setColor(Color.BLACK);
-					g.fillRect(x1 + GRID_X + (x * (INNER_CELL_SIZE + 1)) + 1, y1 + GRID_Y + (y * (INNER_CELL_SIZE + 1)) + 1, INNER_CELL_SIZE, INNER_CELL_SIZE);
-				} else {
-					}
-				} 
-			}
-		}
-
-
-	 }
-
+		
 	// GETTERS
 
 	public int getGridX(int x, int y) 
